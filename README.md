@@ -1,5 +1,3 @@
-# Aws-Iam-S3-Least-Privilege
-
 # AWS IAM LEAST Privilege S3 Access Control
 
 ## Project Overview 
