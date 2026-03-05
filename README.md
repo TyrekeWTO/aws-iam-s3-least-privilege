@@ -1,1 +1,1 @@
-# aws-iam-s3-least-privilege
+# Aws-Iam-S3-Least-Privilege
