@@ -44,6 +44,6 @@ This confirmed that the IAM policy correctly enforced least privilege and preven
 - Improper resource scoping in IAM policies can lead to privilege escalation or unauthorized object uploads. This Project demonstrates how properly scoped policies reduce attack surface.
 
 - ## Architecture Screenshot
+![IAM Policy](IAM-policy.png)
 
-  Below is the AWS IAM Policy and S3 configuration used in this project.
   
