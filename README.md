@@ -5,19 +5,20 @@ This project demostrates how to enforce least-privilege access to an amazon S3 b
 
 The goal was to allow developers to view and download objects while preventing them from uploading, modifying, or deleting files.
 
-## Architecture 
-- AWS IAM Role
-- IAM Policy
-- Amazon S3 Bucket
-- Cross-account role assumption
-- Least privilege access control
+## Architecture Diagram
+Developer User
+      ↓
+IAM Policy (Least Privilege)
+      ↓
+S3 Bucket
+(Read-Only Access)
 
 - ## Security Model
 - Developers are granted only the permissions required for their role.
 
 - Allowed actions:
--s3:ListBucket
--s3:ListObject
+-s3:LISTBucket
+-s3:GetObject
 
 Denied actions 
 -s3:PutObject
@@ -25,7 +26,7 @@ Denied actions
 -s3:DeleteBucket 
 
 ## Attack Scenario Tested 
-an upload attempt was made from a restricted develovoper account.
+An upload attempt was made from a restricted develovoper account.
 
 Result:
 Access Denied 
